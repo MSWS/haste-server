@@ -34,8 +34,7 @@
 				console.log(baseUrl);
 				baseUrl = baseUrl.slice(0, baseUrl.length - 1).join('/') + '/';
 				console.log(baseUrl);
-				// baseUrl = 'https://plazatest.zneix.eu/haste/';
-				app = new haste('hastebin', { twitter: true, baseUrl: baseUrl });
+				app = new haste('hastebin', { twitter: false, baseUrl: baseUrl });
 				handlePop({ target: window });
 			});
 		</script>
@@ -45,14 +44,11 @@
 
 		<div id="key">
 			<div id="pointer" style="display: none;"></div>
-			<div id="box1">
-				<a href="about.md" class="logo"></a>
-			</div>
 			<div id="box2">
 				<button class="save function button-picture">Save</button>
 				<button class="new function button-picture">New</button>
 				<button class="duplicate function button-picture">Duplicate & Edit</button>
-				<button class="raw function button-picture">Just Text</button>
+				<!-- <button class="raw function button-picture">Just Text</button> -->
 				<button class="twitter function button-picture">Twitter</button>
 			</div>
 			<div id="box3" style="display:none;">
@@ -66,3 +62,5 @@
 			<pre id="box" style="display: none;" class="hljs" tabindex="0"><code></code></pre>
 			<textarea spellcheck="false" style="display: none;"></textarea>
 		</div>
+    </body>
+</html>
