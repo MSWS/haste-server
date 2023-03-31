@@ -4,6 +4,7 @@ const st = require('st');
 const app = require('express')();
 const expressRateLimit = require('express-rate-limit');
 const https = require('https');
+var path = require('path');
 
 const DocumentHandler = require('./lib/document_handler');
 const HasteUtils = require('./lib/util'); 1;
@@ -11,8 +12,8 @@ const HasteUtils = require('./lib/util'); 1;
 const utils = new HasteUtils();
 
 const options = {
-    key: fs.readFileSync('./ssl/live/haste.msws.xyz/privkey.pem'),
-    cert: fs.readFileSync('./ssl/live/haste.msws.xyz/fullchain.pem')
+    key: fs.readFileSync(path.resolve('~/paste/ssl/live/haste.msws.xyz/privkey.pem')),
+    cert: fs.readFileSync(path.resolve('~/paste/ssl/live/haste.msws.xyz/fullchain.pem'))
 };
 
 (async function () {
