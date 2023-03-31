@@ -12,8 +12,8 @@ const HasteUtils = require('./lib/util'); 1;
 const utils = new HasteUtils();
 
 const options = {
-    key: fs.readFileSync(path.resolve('/ssl/live/haste.msws.xyz/privkey.pem')),
-    cert: fs.readFileSync(path.resolve('/ssl/live/haste.msws.xyz/fullchain.pem'))
+    key: fs.readFileSync(path.resolve('~/ssl/live/haste.msws.xyz/privkey.pem')),
+    cert: fs.readFileSync(path.resolve('~/ssl/live/haste.msws.xyz/fullchain.pem'))
 };
 
 (async function () {
