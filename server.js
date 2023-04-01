@@ -9,6 +9,8 @@ const HasteUtils = require('./lib/util');
 
 const utils = new HasteUtils();
 
+const cache = {};
+
 (async function () {
 
     //"out-of-box" support - copy example config if it doesn't exist
