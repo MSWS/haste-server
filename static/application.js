@@ -304,10 +304,6 @@ class haste {
             }
         });
     }
-
-    onKeyPress() {
-        console.log('onKeyPress');
-    }
 }
 
 // Map of common extensions
