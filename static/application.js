@@ -233,7 +233,7 @@ class haste {
             {
                 $where: $('#box2 .save'),
                 label: 'Save',
-                shortcutDescription: 'control + s',
+                shortcutDescription: 'ctrl s',
                 shortcut: function (evt) {
                     return evt.ctrlKey && (evt.keyCode == 83);
                 },
@@ -249,18 +249,18 @@ class haste {
                 shortcut: function (evt) {
                     return evt.ctrlKey && evt.keyCode == 78;
                 },
-                shortcutDescription: 'control + n',
+                shortcutDescription: 'ctrl n',
                 action: function () {
                     _this.newDocument(!_this.doc.key);
                 }
             },
             {
                 $where: $('#box2 .duplicate'),
-                label: 'Duplicate & Edit',
+                label: 'Edit Copy',
                 shortcut: function (evt) {
                     return _this.doc.locked && evt.ctrlKey && evt.keyCode == 68;
                 },
-                shortcutDescription: 'control + d',
+                shortcutDescription: 'ctrl d',
                 action: function () {
                     _this.duplicateDocument();
                 }
